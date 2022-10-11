@@ -1,0 +1,5 @@
+{
+  "name": "api-js",
+  "description": "Reference project for APIs",
+  "packageManager": "yarn@3.2.4"
+}
