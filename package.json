@@ -3,6 +3,8 @@
   "description": "Reference project for APIs",
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "serverless": "^3.23.0",
     "serverless-bundle": "^5.5.0",
@@ -10,5 +12,15 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "packages/model/src/**/*.js": [
+      "yarn workspace model lint",
+      "pretty-quick --staged"
+    ]
+  }
 }
