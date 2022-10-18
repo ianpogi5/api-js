@@ -16,11 +16,5 @@
   "scripts": {
     "lint-staged": "lint-staged",
     "postinstall": "husky install"
-  },
-  "lint-staged": {
-    "packages/model/src/**/*.js": [
-      "yarn workspace model lint",
-      "pretty-quick --staged"
-    ]
   }
 }

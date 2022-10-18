@@ -1,0 +1,6 @@
+{
+  "packages/model/src/**/*.js": [
+    "yarn workspace model lint",
+    "pretty-quick --staged"
+  ]
+}
