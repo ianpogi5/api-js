@@ -8,9 +8,7 @@
     "serverless-bundle": "^5.5.0",
     "serverless-offline": "^11.1.1"
   },
-  "peerDependencies": {
-    "serverless": "*",
-    "serverless-bundle": "*",
-    "serverless-offline": "*"
-  }
+  "workspaces": [
+    "packages/*"
+  ]
 }
