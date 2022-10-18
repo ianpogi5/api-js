@@ -1,5 +1,16 @@
 {
   "name": "api-js",
   "description": "Reference project for APIs",
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "serverless": "^3.23.0",
+    "serverless-bundle": "^5.5.0",
+    "serverless-offline": "^11.1.1"
+  },
+  "peerDependencies": {
+    "serverless": "*",
+    "serverless-bundle": "*",
+    "serverless-offline": "*"
+  }
 }
