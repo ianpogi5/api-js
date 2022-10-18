@@ -1,25 +1,25 @@
-import mongoose from 'mongoose';
-import debug from 'debug';
+import mongoose from "mongoose";
+import debug from "debug";
 
-const log = debug('mongodb');
+const log = debug("mongodb");
 
 let conn = null;
 
 export const mongoConnect = async (mongoUrl) => {
   if (conn !== null) {
-    log('Reusing DB client');
+    log("Reusing DB client");
     return conn;
   }
 
   const { MONGO_URL } = process.env;
-  log('MONGO_URL:', mongoUrl || MONGO_URL);
+  log("MONGO_URL:", mongoUrl || MONGO_URL);
 
   try {
-    log('Creating new DB client');
+    log("Creating new DB client");
     conn = await mongoose.connect(mongoUrl || MONGO_URL, {
       serverSelectionTimeoutMS: 15000,
     });
-    log('Connected', conn);
+    log("Connected", conn);
 
     // `await`ing connection after assigning to the `conn` variable
     // to avoid multiple function calls creating new connections
@@ -38,5 +38,5 @@ export const mongoConnect = async (mongoUrl) => {
 export const mongoDisconnect = async () => {
   if (conn) await mongoose.connection.close();
   conn = null;
-  log('DB disconnected');
+  log("DB disconnected");
 };
