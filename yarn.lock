@@ -1325,7 +1325,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.19.4, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.19.4, @babel/runtime@npm:^7.8.4":
   version: 7.19.4
   resolution: "@babel/runtime@npm:7.19.4"
   dependencies:
@@ -2390,25 +2390,6 @@ __metadata:
     "@jridgewell/resolve-uri": 3.1.0
     "@jridgewell/sourcemap-codec": 1.4.14
   checksum: 881fa21ce066ab5e9c23991ac435dfae2ac8ffa74510379a028b0d002437b48a50464369436c5d242b6e648eec17f77003c73c1f54325cfcd8824967c2356910
-  languageName: node
-  linkType: hard
-
-"@kdcio/api-gw-req@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "@kdcio/api-gw-req@npm:1.3.1"
-  dependencies:
-    "@babel/runtime": ^7.14.6
-  checksum: 11e046ffebe04293aa45aede9238fb442089edb3633d97b77282c51f787798facd88e50913d3f05e428ecfebf8bb57f0092d28f606fd7e834cefa780ffe63f2b
-  languageName: node
-  linkType: hard
-
-"@kdcio/api-gw-resp@npm:^1.7.6":
-  version: 1.7.6
-  resolution: "@kdcio/api-gw-resp@npm:1.7.6"
-  dependencies:
-    "@babel/runtime": ^7.14.0
-    tslib: ^2.2.0
-  checksum: f4710f31924e23419ab23871a121d7104496822d6d2270e81614f66ccaf4fe81c8dc169fd1328f6b9a106917eaead2e7455cfc100cbf3d0695ee6f2cdd273702
   languageName: node
   linkType: hard
 
@@ -3503,16 +3484,6 @@ __metadata:
   checksum: 985163db2292fac9e5a1e072bf99f1b5baccf196e4de25a0b0b81865ebddeb3b3eb4480734ef0a2ac8c002845396b91aa89121f5b84f93981a4658164a9ec6e9
   languageName: node
   linkType: hard
-
-"api-categories@workspace:packages/api-categories":
-  version: 0.0.0-use.local
-  resolution: "api-categories@workspace:packages/api-categories"
-  dependencies:
-    "@kdcio/api-gw-req": ^1.3.1
-    "@kdcio/api-gw-resp": ^1.7.6
-    debug: ^4.3.4
-  languageName: unknown
-  linkType: soft
 
 "api-js@workspace:.":
   version: 0.0.0-use.local
@@ -12423,13 +12394,13 @@ __metadata:
   linkType: hard
 
 "simple-git@npm:^3.7.0":
-  version: 3.14.1
-  resolution: "simple-git@npm:3.14.1"
+  version: 3.16.0
+  resolution: "simple-git@npm:3.16.0"
   dependencies:
     "@kwsites/file-exists": ^1.1.1
     "@kwsites/promise-deferred": ^1.1.1
     debug: ^4.3.4
-  checksum: f9d2282e1483f8f42325a7e80803389eb540101a88968bf9fd277c1eade8621d4c24dcf2677be5d611df8716934fb4c9676356052ac03e2fcec7517b4b922e8b
+  checksum: fd28eb43be39d158d2c321cd34eb00f61c365513478ff2bb31f4da06315dcd018e03c6ece9f99558f3fd8834171072850aed1376bf50f8d922b0e2dadede0c2d
   languageName: node
   linkType: hard
 
@@ -13427,7 +13398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0, tslib@npm:^2.2.0":
+"tslib@npm:^2.1.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
